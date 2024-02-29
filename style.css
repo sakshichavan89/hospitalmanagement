@@ -1,0 +1,230 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#navbar {
+    background-color: #004d99;
+    color: white;
+    padding: 10px 0;
+}
+
+#navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar li {
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+#navbar li:hover {
+    background-color: #003366;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.card {
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 16px;
+    text-align: center; /* Center text and button inside the card */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%; /* Make image fill the card */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#apply-now {
+    background-color: #004d99;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#apply-now:hover {
+    background-color: #003366;
+}
+
+#create-account {
+    background-color: #004d99;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#create-account:hover {
+    background-color: #003366;
+}
+
+#more {
+    background-color: #004d99;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#more:hover {
+    background-color: #003366;
+}
+
+
+.login-container {
+    background: url('a14.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-form h2 {
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: #333;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0; /* Gives a modern look */
+    font-size: 16px;
+    background: transparent;
+    transition: border-color 0.3s;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+    border-bottom-color: #004d99; /* Highlight color */
+    outline: none; /* Removes the default focus outline */
+}
+
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #004d99;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+    background-color: #003366;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .login-form {
+        padding: 30px 20px;
+    }
+}
+
+
+#navbar a {
+    color: white; /* Example color */
+    text-decoration: none; /* Removes underline */
+    padding: 10px; /* Example padding */
+}
+
+#navbar a:hover {
+    background-color: #003366; /* Darker shade for hover effect */
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #13082e;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 250px; /* Adjust based on the sidenav width */
+    padding: 20px;
+}
+
+.dashboard-item {
+    flex: 0 1 calc(33.333% - 40px); /* 3 items per row, accounting for margins */
+    margin: 10px; /* Space between items */
+    height: 150px; /* Fixed height to maintain square (adjust as necessary) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+    font-weight: bold;
+    border-radius: 10px; /* Rounded corners for aesthetics */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.dashboard-item span {
+    font-size: 20px; /* Larger font size for numbers */
+}
